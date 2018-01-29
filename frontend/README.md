@@ -1,5 +1,5 @@
 # End-to-End frontend test
-This structure performs an end-to-end test for the KDC frontend using Selenium and mocha.
+This structure performs an end-to-end test for the GeoWeb frontend using Selenium and mocha.
 
 
 # How to run
@@ -22,7 +22,7 @@ If you do not have mocha globally installed then you can run: `node --harmony no
 This section described common problems we discovered and how to fix them.
 
 ## Firefox exits with a WebDriverError
-This is due to `data-test.knmi.nl` having an invalid SSL certificate.
+This might be due to having an invalid SSL certificate.
 Firefox cannot handle this and exits and efforts to make Firefox not verify SSL certificates are so far unsuccessful.
 TODO: fix Firefox SSL certificate ignore.
 
