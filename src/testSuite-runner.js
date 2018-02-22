@@ -6,6 +6,6 @@ launcher.run().then((code) => {
   console.log('Completing GeoWeb test suite runner with code', code);
   process.exit(code);
 }, (error) => {
-  console.error('GeoWeb test suite runner couldn\'t start', error.stacktrace);
+  console.error('Unfortunately, GeoWeb test suite runner couldn\'t start', error.stacktrace);
   process.exit(1);
 });
