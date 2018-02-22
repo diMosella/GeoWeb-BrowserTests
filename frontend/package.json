@@ -1,5 +1,5 @@
 {
-  "name": "kdc-frontend-tests",
+  "name": "geoweb-browser-tests",
   "version": "0.0.1",
   "dependencies": {
     "chai": "^4.0.2",
