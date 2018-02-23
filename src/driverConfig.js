@@ -43,6 +43,6 @@ module.exports = {
     const driver = builder.build();
 
     return driver; */
-    return webdriver.remote(options).init();
+    return webdriver.remote().init();
   }
 };

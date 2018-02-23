@@ -1,6 +1,6 @@
 const webdriver = require('webdriverio');
 
-const launcher = new webdriver.Launcher('./wdio.conf.js', { desiredCapabilities: { browserName: 'chrome' }});
+const launcher = new webdriver.Launcher('./wdio.conf.js', { desiredCapabilities: { browserName: 'chrome' }, path: '/', port: 9515 });
 console.log('Starting GeoWeb test suite runner...');
 launcher.run().then((code) => {
   console.log('Completing GeoWeb test suite runner with code', code);
