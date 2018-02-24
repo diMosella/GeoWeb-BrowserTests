@@ -1,4 +1,3 @@
-// const PageUtils = require('../utils/PageUtils');
 const { expect } = require('chai');
 const { LandingPage } = require('../pages/landing.page');
 

@@ -47,7 +47,10 @@ exports.config = {
     // },
     {
       maxInstances: 5,
-      browserName: 'chrome'
+      browserName: 'chrome',
+      chromeOptions: {
+        // args: ["headless", "disable-gpu"]
+      }
     }
   ],
   /**
@@ -109,7 +112,6 @@ exports.config = {
    * commands. Instead, they hook themselves up into the test process.
    */
   services: [ 'webdriver' ],
-  // services: [ ],
   webDriverType: 'chromedriver',
   webDriverLogs: './logs/',
   webDriverArgs: ['--silent'],
