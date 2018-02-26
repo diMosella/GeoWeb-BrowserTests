@@ -37,7 +37,7 @@
   if (typeof browserChoice === 'string') {
     console.log('...with browser choice', browserChoice);
   } else {
-    console.log('...without explicit browser choice (use flags -- -b <browsername> to specify browser)');
+    console.log('...without explicit browser choice, using fallback \'chrome\' (use flags -- -b <browsername> to specify browser)');
     browserChoice = 'chrome';
   }
   const context = getRunContext(browserChoice);
