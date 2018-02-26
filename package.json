@@ -13,6 +13,7 @@
     "wdio-webdriver-service": "^0.1.5"
   },
   "scripts": {
-    "test": "./run-testSuite.sh"
+    "start": "node src/testSuite-runner",
+    "test": "node src/testSuite-runner"
   }
 }
