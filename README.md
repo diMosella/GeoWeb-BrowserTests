@@ -17,6 +17,7 @@ This section describes how to run and write tests
 Dependencies installation is very simple: `npm install`. Make sure you use Node v7.10.1 or higher.
 
 ### Run the test suite
+<<<<<<< HEAD
 All individual tests are in the `tests` directory. To run the suite: use `npm start`. You can also specify a browser to use: `npm start -- -b <browsername>`. Currently for `<browsername>` you can choose `chrome` or `firefox`.
 
 ## TODO
