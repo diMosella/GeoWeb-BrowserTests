@@ -1,1 +1,7 @@
-frontend/node_modules
+.DS_STORE
+*.log*
+
+node_modules
+errors
+logs
+.vscode
