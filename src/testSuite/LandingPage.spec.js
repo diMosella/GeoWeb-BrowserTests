@@ -20,17 +20,17 @@ describe('(Page) LandingPage', () => {
 
   it('should be able to set the right ADAGUC-panel layout', () => {
     expect(landingPage.getAdagucPanelCount()).to.eql(1);
-    landingPage.setLayout('1-1');
+    landingPage.setLayout('1_1');
     expect(landingPage.getAdagucPanelCount()).to.eql(2);
-    landingPage.setLayout('1-1-1');
+    landingPage.setLayout('1_1_1');
     expect(landingPage.getAdagucPanelCount()).to.eql(3);
-    landingPage.setLayout('1-2');
+    landingPage.setLayout('1_2');
     expect(landingPage.getAdagucPanelCount()).to.eql(3);
-    landingPage.setLayout('1-3');
+    landingPage.setLayout('1_3');
     expect(landingPage.getAdagucPanelCount()).to.eql(4);
-    landingPage.setLayout('1-1-1-1');
+    landingPage.setLayout('1_1_1_1');
     expect(landingPage.getAdagucPanelCount()).to.eql(4);
-    landingPage.setLayout('2-2');
+    landingPage.setLayout('2_2');
     expect(landingPage.getAdagucPanelCount()).to.eql(4);
   });
 

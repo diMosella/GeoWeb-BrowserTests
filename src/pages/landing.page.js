@@ -36,31 +36,11 @@ class LandingPage {
   setLayout (layoutName) {
     browser.click(elementSelectors.layoutButton);
     let buttonSelector;
-    switch (layoutName) {
-      case '1':
-      buttonSelector = elementSelectors.layout1;
-      break;
-      case '1-1':
-      buttonSelector = elementSelectors.layout1_1;
-      break;
-      case '1-1-1':
-      buttonSelector = elementSelectors.layout1_1_1;
-      break;
-      case '1-2':
-      buttonSelector = elementSelectors.layout1_2;
-      break;
-      case '1-3':
-      buttonSelector = elementSelectors.layout1_3;
-      break;
-      case '1-1-1-1':
-      buttonSelector = elementSelectors.layout1_1_1_1;
-      break;
-      case '2-2':
-      buttonSelector = elementSelectors.layout2_2;
-      break;
-      default:
-      break;
+    console.log('Str',`layout${layoutName}`);
+    if (`layout${layoutName}` in elementSelectors) {
+      buttonSelector = elementSelectors[`layout${layoutName}`];
     }
+    console.log('Rslt', buttonSelector);
     if (buttonSelector) {
       browser.waitForVisible(buttonSelector);
       browser.click(buttonSelector);

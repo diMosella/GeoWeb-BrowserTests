@@ -46,7 +46,7 @@
     process.exit(1);
   }
 
-  const launcher = new webdriver.Launcher(`./src/driver_configs/${context.config}`, { desiredCapabilities: { browserName: browserChoice }, path: '/', port: 9515 });
+  const launcher = new webdriver.Launcher(`./src/drivers/${context.config}`, { desiredCapabilities: { browserName: browserChoice }, path: '/', port: 9515 });
   launcher.run().then((code) => {
     console.log('Completing GeoWeb test suite runner with code', code);
     process.exit(code);
